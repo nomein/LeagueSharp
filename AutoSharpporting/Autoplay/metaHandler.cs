@@ -24,7 +24,7 @@ namespace Support
         public static List<Obj_AI_Hero> AllHeroes;
         public static List<Obj_AI_Hero> AllyHeroes;
         public static List<Obj_AI_Hero> EnemyHeroes; 
-        static readonly ItemId[] SRShopList = { ItemId.Zhonyas_Hourglass, ItemId.Rabadons_Deathcap, ItemId.Sorcerers_Shoes, ItemId.Athenes_Unholy_Grail, ItemId.Mikaels_Crucible, ItemId.Frost_Queens_Claim, ItemId.Ruby_Sightstone, ItemId.Locket_of_the_Iron_Solari, ItemId.Morellonomicon, ItemId.Rod_of_Ages };
+        static readonly ItemId[] SRShopList = { ItemId.Mana_Potion, ItemId.Morellonomicon, ItemId.Zhonyas_Hourglass, ItemId.Rabadons_Deathcap, ItemId.Sorcerers_Shoes, ItemId.Frost_Queens_Claim, ItemId.Rod_of_Ages };
         static readonly ItemId[] TTShopList = { ItemId.Rod_of_Ages, ItemId.Sorcerers_Shoes, ItemId.Wooglets_Witchcap };
         static readonly ItemId[] ARAMShopListAP = { ItemId.Zhonyas_Hourglass, ItemId.Rod_of_Ages, ItemId.Sorcerers_Shoes, ItemId.Rylais_Crystal_Scepter, ItemId.Will_of_the_Ancients, ItemId.Zekes_Herald, ItemId.Locket_of_the_Iron_Solari, ItemId.Hextech_Sweeper };
         static readonly ItemId[] ARAMShopListAD = { ItemId.Blade_of_the_Ruined_King, ItemId.Berserkers_Greaves, ItemId.Infinity_Edge, ItemId.Phantom_Dancer, ItemId.Statikk_Shiv };
@@ -42,6 +42,8 @@ namespace Support
                 {
                     Autoplay.Bot.BuyItem(ItemId.Spellthiefs_Edge);
                     Autoplay.Bot.BuyItem(ItemId.Warding_Totem_Trinket);
+                    Autoplay.Bot.BuyItem(ItemId.Health_Potion);
+                    Autoplay.Bot.BuyItem(ItemId.Mana_Potion);
                 }
 
                 if (Autoplay.Bot.InFountain() && Autoplay.Bot.Gold >= 1000)
